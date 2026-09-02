@@ -1,16 +1,189 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biography</title>
+    <title>Biografía - Juan</title>
+    <style>
+        /* Estilos generales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Sección de Perfil (Encabezado) */
+        .profile-card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 600px) {
+            .profile-card {
+                flex-direction: row;
+                text-align: left;
+                gap: 2rem;
+            }
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #38bdf8;
+            background-color: #334155;
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width: 600px) {
+            .profile-img {
+                margin-bottom: 0;
+            }
+        }
+
+        .profile-info h1 {
+            font-size: 2.2rem;
+            color: #38bdf8;
+            margin-bottom: 0.2rem;
+        }
+
+        .profile-info h2 {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .bio-text {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+        }
+
+        /* Secciones secundarias */
+        .section-box {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-box h3 {
+            color: #38bdf8;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .skills-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skills-list li {
+            background: #334155;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #e2e8f0;
+        }
+
+        /* Cuadrícula para GIFs de Tenor */
+        .gif-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .gif-item {
+            background: #0f172a;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #334155;
+            padding: 0.5rem;
+        }
+    </style>
 </head>
 <body>
-    <section>
-        <h1>Juan</h1>
-        <h2>Bachiller</h2>
-        <h2>Estudiante</h2>
-        <h2>1</h2>
-        <h2>2</h2>
-    </section>
+
+    <div class="container">
+        <header class="profile-card">
+            <img src="Condorito.png" alt="Fotografía de Juan" class="profile-img">
+            
+            <div class="profile-info">
+                <h1>Juan</h1>
+                <h2>Bachiller</h2>
+                <p class="bio-text">
+                    Estudiante Universitario Universidad Distrital Francisco Jose de Caldas.
+                </p>
+            </div>
+        </header>
+
+        <section class="section-box">
+            <h3>Habilidad e Intereses</h3>
+            <p class="bio-text" style="margin-bottom: 1rem;">
+                Se hablar ingles, nada mas.
+            </p>
+            <ul class="skills-list">
+                <li>Ingles Basico</li>
+                <li>Tanques</li>
+                <li>Historia</li>
+                <li>Umamusume</li>
+                <li>Carros a control remoto tipo 'Crawlers'</li>
+            </ul>
+        </section>
+
+        <section class="section-box">
+            <h3>Gifs Destacados</h3>
+            <div class="gif-grid">
+                
+                <div class="gif-item">
+                    <div class="tenor-gif-embed" data-postid="1522660367344927234" data-share-method="host" data-aspect-ratio="0.594595" data-width="100%">
+                        <a href="https://tenor.com/view/%E3%82%A6%E3%83%9E%E5%A8%98-uma-musume-umamusume-biwa-hayahide-gif-1522660367344927234">ウマ娘 Uma GIF</a>
+                    </div>
+                </div>
+
+                <div class="gif-item">
+                    <div class="tenor-gif-embed" data-postid="13159335888882051703" data-share-method="host" data-aspect-ratio="0.930233" data-width="100%">
+                        <a href="https://tenor.com/view/dizarine-biwa-biwa-hayahide-gif-13159335888882051703">Dizarine Biwa GIF</a>
+                </div>
+
+                <div class="gif-item">
+                    <div class="tenor-gif-embed" data-postid="16872846671503211710" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+                        <a href="https://tenor.com/view/se-quemo-el-keke-keke-daiwa-scarlet-uma-musume-gif-16872846671503211710">Se Quemo El Keke Daiwa Scarlet GIF</a>
+                        
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
 </body>
 </html>
